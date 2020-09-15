@@ -1,7 +1,5 @@
-zulu_openjdk
+ansible-role-openjdk
 ============
-
-[![Build Status](https://travis-ci.org/andrelohmann/ansible-role-zulu_openjdk.svg?branch=master)](https://travis-ci.org/andrelohmann/ansible-role-zulu_openjdk)
 
 Use this role to install OpenJDK from zulu ppa.
 
@@ -13,14 +11,14 @@ This role requires ubuntu.
 Role Variables
 --------------
 
-    zulu_openjdk_version: "12"
+    openjdk_version: "11"
 
 Example Playbook
 ----------------
 
-    - hosts: zulu_openjdk
+    - hosts: openjdk
       roles:
-         - { role: andrelohmann.zulu_openjdk }
+         - { role: ansible-role-openjdk }
 
 License
 -------
@@ -30,4 +28,6 @@ MIT
 Author Information
 ------------------
 
-https://github.com/andrelohmann
+https://github.com/pasernik
+
+Based on https://github.com/andrelohmann/ansible-role-percona_mysql
